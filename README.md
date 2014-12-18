@@ -1,6 +1,9 @@
 TagDragon - jQuery Autosuggest plugin
 =========
 
+
+![TagDragon in action](https://raw.githubusercontent.com/fchristant/TagDragon/master/img/impression.jpg "TagDragon in action") ![TagDragon in action](https://raw.githubusercontent.com/fchristant/TagDragon/master/img/impression2.jpg "TagDragon in action")
+
 **Note**: TagDragon used to be a mandatory donationware jQuery plugin. As of now it is free, donated to the community to use, fork and improve. Support by the original author is limited. Use as you wish.
 
 ####Introduction
