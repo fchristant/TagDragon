@@ -1,7 +1,7 @@
 TagDragon - jQuery Autosuggest plugin
 =========
 
-**Note**: TagDragon used to be a commercial jQuery plugin. It is hereby free, donated to the community to use, fork and improve. Support by the original author is limited. Use as you wish.
+**Note**: TagDragon used to be a mandatory donationware jQuery plugin. As of now it is free, donated to the community to use, fork and improve. Support by the original author is limited. Use as you wish.
 
 ####Introduction
 Tagdragon is a simple, robust and configurable autosuggest plugin that allows you to easily implement *auto suggest* or *type-ahead* functionality on your web page.
