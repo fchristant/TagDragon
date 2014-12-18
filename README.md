@@ -408,3 +408,14 @@ It should be easy to output this formatting in most platforms. Here is some exam
 Line 1-6 deal with opening the database, doing the query and closing it. From line 10, we are looping through the results. For each row we encounter, we add output to the tagstring which will contain the total output in the end. We are using json_encode() (PHP 5.2 only) to make sure that our special characters and Unicode characters are well encoded. This is an important step, because a special character can break the validity of the output, and nothing is returned. Furthermore, on the same line (line 12) we are doing a check to see if we need to append a comma. We should not do this for the last entry. Finally, at line 15 we output the total JSON string at once.
 
 That's all! This may seem like a lot, but trust us, you can have a fully working TagDragon control set up in a very short time!
+
+#####Troubleshooting
+
+If you are having issues getting TagDragon to work for you, please run through the following checklist:
+
+* Have you included the correct javascript libraries, jQuery, TagDragon, and your own?
+* Have you set the id values of your fields and surrounding div correctly?
+* Have you correctly configured the TagDragon parameters?
+* Did you make any syntax errors?
+* Is your backend response correct? Does the request arrive? What is returned? Is it valid JSON?
+* Are you using a modern browser? Is Javascript enabled?
