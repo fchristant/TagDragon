@@ -6,12 +6,12 @@ TagDragon - jQuery Autosuggest plugin
 
 **Note**: TagDragon used to be a mandatory donationware jQuery plugin. As of now it is free, donated to the community to use, fork and improve. Support by the original author is limited. Use as you wish.
 
-####Introduction
+# Introduction
 Tagdragon is a simple, robust and configurable autosuggest plugin that allows you to easily implement *auto suggest* or *type-ahead* functionality on your web page.
 
 The basic working of the plugin is to assign it to an input or textarea element on your web page and to link it to a back-end JSON service that provides the suggestions. There are several options to configure the exact behavior. In addition, the control can run in default mode, where a dropdown-like control is rendered, or in override mode, where you can completely overrule the rendering of the output of the returned suggestions.
 
-####Features
+# Features
 
 * Single value, multiple value, free value
 * Works for input boxes and text areas
@@ -35,11 +35,11 @@ The basic working of the plugin is to assign it to an input or textarea element 
 * Rich callback API for even more control
 * Alternate rows
 
-####Usage
+# Usage
 
 Basic usage of TagDragon is to include the correct markup, load the library, and make a single javascript call. 
 
-#####HTML
+# HTML
 
 TagDragon is designed to work with regular HTML forms. You can apply it to input text boxes or textarea controls. You can have multiple TagDragon controls on one page. You simple place your regular controls with the form tags, and then apply the correct markup to the controls you want to have autosuggest functionality.
 
@@ -63,7 +63,7 @@ The markup to create a TagDragon control for a text area box is as follow:
 
 The principles and rules here are exactly the same as for text input controls. You can of course set the rows and cols values of the text area to your own preferences. As you can see, we are giving this second control a different id value.
 
-#####Javascript - basics
+# Javascript - basics
 
 Before we can enable the suggestion lists for the controls we just created, we first need to include the TagDragon libraries in our web page. You can choose between the uncompressed version (jquery.tagdragon.js), which has full code comments and is easy to debug, or the production version (jquery.tagdragon.min.js), which is compressed and very light. We also need a copy of jQuery, here we can either download the latest version, or link directly to Google's online version. For now we will assume that you are using the production version of both jQuery and TagDragon. Place the following markup inside the head section of your web page:
 
@@ -97,7 +97,7 @@ Option  | Description
 **visible** | Parameter that indicates whether the suggestion list should be rendered at all. **Default**: true. You typically set this to false when you want to completely override the rendering of the results from the back-end.
 **dataType** | Parameter to set the data type of the result from the back-end. **Default**: json. You can set this to "html" if that is what your back-end returns and you want to take care of your own rendering.
 
-#####Javascript - callbacks
+# Javascript - callbacks
 
 On top of the options above, there are a few callback functions which you can specify as part of the options. These allow you to control the behavior of the control based upon your own events and logic. If you do not specify these, the default behavior of the control is used.
 
@@ -141,7 +141,7 @@ onLoadedList: function(results) { }
 
 This function is called right after the values for the suggestion list are loaded. You do not have to return anything. results contains the values returned from the back-end, the data type is by default json but it can be overriden using the "dataType" parameter (see parameter list above). This method is particularly useful in combination with the dataType and visible parameters, as it allows you to completely override the rendering of TagDragon results.
 
-#####Javascript - extra methods
+# Javascript - extra methods
 
 Besides the main tagdragon method, there are a few addition methods that you can call yourself during runtime:
 
@@ -171,7 +171,7 @@ The clear() method allows you to hide the suggestion list during runtime.
 
 That's it! You can go the simple way (one line of Javascript) or extensively optimize the control for your situation using the options, callbacks and methods. On to the styling...
 
-#####CSS
+# CSS
 
 TagDragon is very easy and flexible to style, there are hardly any rules. You can create a seperate stylesheet for TagDragon or integrate some rules in your own stylesheet. Here are some pointers.
 
@@ -310,7 +310,7 @@ As of TagDragon 1.1, you can also style alternate rows, by styling odd and even 
 ```
 When you know basic CSS, you can style TagDragon controls easily!
 
-#####Back-end
+# Back-end
 
 Finally, the important part of integrating TagDragon with your backend. We need to get the values for the suggestion list from somewhere. Luckily, this is an easy thing to do. TagDragon can easily be integrated with any platform that:
 
@@ -320,7 +320,7 @@ Finally, the important part of integrating TagDragon with your backend. We need 
 
 There are too many back-end platforms to explain everything here. However, some pointers may help you implement this in your own scenario. For now, we will use a simplified PHP/MySQL example.
 
-######Receiving the POST
+# Receiving the POST
 
 TagDragon uses AJAX POSTS to communicate with the backend. To receive this value in PHP, we simply do this:
 
@@ -412,7 +412,7 @@ Line 1-6 deal with opening the database, doing the query and closing it. From li
 
 That's all! This may seem like a lot, but trust us, you can have a fully working TagDragon control set up in a very short time!
 
-#####Troubleshooting
+# Troubleshooting
 
 If you are having issues getting TagDragon to work for you, please run through the following checklist:
 
